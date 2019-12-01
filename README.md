@@ -2,4 +2,4 @@
 Time Tracker app made with Realm. Follows Unidirectional Data Flow pattern
 
 ![Image of UDF]
-(https://github.com/zafarivaev/images/UDF.jpg)
+(https://github.com/zafarivaev/images/UDF.png)
