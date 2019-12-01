@@ -3,27 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1C77629A239446D300DE551D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C776299239446D300DE551D /* AppDelegate.swift */; };
-		1C77629C239446D300DE551D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C77629B239446D300DE551D /* SceneDelegate.swift */; };
 		1C77629E239446D300DE551D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C77629D239446D300DE551D /* ViewController.swift */; };
 		1C7762A1239446D300DE551D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C77629F239446D300DE551D /* Main.storyboard */; };
 		1C7762A3239446D400DE551D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C7762A2239446D400DE551D /* Assets.xcassets */; };
 		1C7762A6239446D400DE551D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C7762A4239446D400DE551D /* LaunchScreen.storyboard */; };
+		1C7762B1239447CE00DE551D /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7762B0239447CE00DE551D /* Store.swift */; };
+		1C7762B423944BE400DE551D /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7762B323944BE400DE551D /* Actions.swift */; };
+		1CE0A9BE23944ED000A52D32 /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0A9BD23944ED000A52D32 /* ProjectCell.swift */; };
+		2A9FAEEFB8AD09754AB9567B /* Pods_TimeTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0124183FD08B94A81761A42C /* Pods_TimeTracker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0124183FD08B94A81761A42C /* Pods_TimeTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C776296239446D300DE551D /* TimeTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C776299239446D300DE551D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1C77629B239446D300DE551D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1C77629D239446D300DE551D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1C7762A0239446D300DE551D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C7762A2239446D400DE551D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C7762A5239446D400DE551D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C7762A7239446D400DE551D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C7762B0239447CE00DE551D /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		1C7762B323944BE400DE551D /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		1CE0A9BD23944ED000A52D32 /* ProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
+		C7B301FCA577B9C094BE4594 /* Pods-TimeTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeTracker.debug.xcconfig"; path = "Target Support Files/Pods-TimeTracker/Pods-TimeTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		CB092E1EAD6F7CF6ECCF2E89 /* Pods-TimeTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeTracker.release.xcconfig"; path = "Target Support Files/Pods-TimeTracker/Pods-TimeTracker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A9FAEEFB8AD09754AB9567B /* Pods_TimeTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				1C776298239446D300DE551D /* TimeTracker */,
 				1C776297239446D300DE551D /* Products */,
+				DD8132891806E11DC8A9A339 /* Pods */,
+				51AB096C4DC6B1C440A3C07C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +67,74 @@
 		1C776298239446D300DE551D /* TimeTracker */ = {
 			isa = PBXGroup;
 			children = (
-				1C776299239446D300DE551D /* AppDelegate.swift */,
-				1C77629B239446D300DE551D /* SceneDelegate.swift */,
+				1C7762B523944DCF00DE551D /* View */,
+				1C7762B223944BDC00DE551D /* Action */,
+				1C7762AF239447C000DE551D /* Store */,
+				1C7762B623944DE100DE551D /* App Delegate */,
+				1C7762B723944DEB00DE551D /* Supporting Files */,
+			);
+			path = TimeTracker;
+			sourceTree = "<group>";
+		};
+		1C7762AF239447C000DE551D /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				1C7762B0239447CE00DE551D /* Store.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		1C7762B223944BDC00DE551D /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				1C7762B323944BE400DE551D /* Actions.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		1C7762B523944DCF00DE551D /* View */ = {
+			isa = PBXGroup;
+			children = (
 				1C77629D239446D300DE551D /* ViewController.swift */,
+				1CE0A9BD23944ED000A52D32 /* ProjectCell.swift */,
 				1C77629F239446D300DE551D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1C7762B623944DE100DE551D /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				1C776299239446D300DE551D /* AppDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		1C7762B723944DEB00DE551D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				1C7762A2239446D400DE551D /* Assets.xcassets */,
 				1C7762A4239446D400DE551D /* LaunchScreen.storyboard */,
 				1C7762A7239446D400DE551D /* Info.plist */,
 			);
-			path = TimeTracker;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		51AB096C4DC6B1C440A3C07C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0124183FD08B94A81761A42C /* Pods_TimeTracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD8132891806E11DC8A9A339 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7B301FCA577B9C094BE4594 /* Pods-TimeTracker.debug.xcconfig */,
+				CB092E1EAD6F7CF6ECCF2E89 /* Pods-TimeTracker.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C7762AA239446D400DE551D /* Build configuration list for PBXNativeTarget "TimeTracker" */;
 			buildPhases = (
+				5B850854E8CDE5E3921A94AE /* [CP] Check Pods Manifest.lock */,
 				1C776292239446D300DE551D /* Sources */,
 				1C776293239446D300DE551D /* Frameworks */,
 				1C776294239446D300DE551D /* Resources */,
+				B4779A7E803502F7FD66DE64 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +205,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5B850854E8CDE5E3921A94AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4779A7E803502F7FD66DE64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeTracker/Pods-TimeTracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeTracker/Pods-TimeTracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimeTracker/Pods-TimeTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1C776292239446D300DE551D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C7762B1239447CE00DE551D /* Store.swift in Sources */,
+				1C7762B423944BE400DE551D /* Actions.swift in Sources */,
 				1C77629E239446D300DE551D /* ViewController.swift in Sources */,
+				1CE0A9BE23944ED000A52D32 /* ProjectCell.swift in Sources */,
 				1C77629A239446D300DE551D /* AppDelegate.swift in Sources */,
-				1C77629C239446D300DE551D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +398,12 @@
 		};
 		1C7762AB239446D400DE551D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7B301FCA577B9C094BE4594 /* Pods-TimeTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MJWVGRX9VD;
-				INFOPLIST_FILE = TimeTracker/Info.plist;
+				INFOPLIST_FILE = "TimeTracker/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +417,12 @@
 		};
 		1C7762AC239446D400DE551D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB092E1EAD6F7CF6ECCF2E89 /* Pods-TimeTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MJWVGRX9VD;
-				INFOPLIST_FILE = TimeTracker/Info.plist;
+				INFOPLIST_FILE = "TimeTracker/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
